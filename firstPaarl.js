@@ -13,13 +13,12 @@ function firstPaarl(PaarlReg){
     //using conditional statement to print registration from Paarl
     if (Paarl[i].startsWith('CJ')){
       console.log(Paarl[i]);
+      return Paarl[i];
     }/*else {
       console.log('not from Paarl');
     }*/
   }
-  //console.log(Paarl);
-  return Paarl;
 }
 
 //using assert to test the function
-assert.deepEqual(firstPaarl('CJ 551,CY 223,CA 996,CJ 100'),[ 'CJ 551', 'CY 223', 'CA 996', 'CJ 100' ])
+assert.equal(firstPaarl('CJ 551,CY 223,CA 996,CJ 100'),[ 'CJ 551'])
