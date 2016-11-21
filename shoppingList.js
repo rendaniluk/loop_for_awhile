@@ -8,6 +8,7 @@ for (var i = 0; i < shoplist.length; i++){
       //printing the list
        console.log(shoplist[i]);
         }
+        console.log(shoplist);
   return shoplist;
 
 };
@@ -16,5 +17,4 @@ for (var i = 0; i < shoplist.length; i++){
 //console.log(what_to_by);
 
 //using assert to test shoppingList function
-assert.equal(shoppingList('buter,sugar,potato,polony,rice,milies,eggs'), 'buter,sugar,potato,polony,rice,milies,eggs')
-assert.equal(shoppingList('Milk,Tea,Beef,Beans'), 'Milk,Tea,Beef,Beans')
+assert.deepEqual(shoppingList('buter,sugar,potato,polony,rice,milies,eggs,Milk,Tea,Beef,Beans'), [ 'buter', 'sugar', 'potato', 'polony', 'rice', 'milies', 'eggs','Milk', 'Tea', 'Beef', 'Beans' ])
