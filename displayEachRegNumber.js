@@ -9,7 +9,8 @@ function displayEachRegNumber(RegNum){
         //printing the list registration numbers
         console.log(Reg[i]);
       }
+      console.log(Reg);
   return Reg;
 }
 //testing code using assert
-assert.equal(displayEachRegNumber('CJ 007,CA 7846,CF 332,CY 774'),'CJ 007,CA 7846,CF 332,CY 774')
+assert.deepEqual(displayEachRegNumber('CJ 007,CA 7846,CF 332,CY 774'),[ 'CJ 007', 'CA 7846', 'CF 332', 'CY 774' ])
