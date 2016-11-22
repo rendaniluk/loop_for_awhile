@@ -8,7 +8,7 @@ function totalPhoneBill(airtime,sT){
    var bilL = airtime.split(',');
   //using for loop to loop from 0 to bilL length
   for (var i = 0;i < bilL.length;i++){
-    //using conditional statement to print bilL
+    //using conditional statement to push bilL array to howMuch
         if(bilL[i].startsWith(sT)){
       howMuch.push(bilL[i]);
       //console.log(bilL[i]);
