@@ -15,7 +15,7 @@ function longestWord(sentence) {
   return longerWord;
 }
 //Calling and storing function call in variable whats_long
-var whats_long = longestWord('Love writing JavaScript I')
+var whats_long = longestWord('I Love writing JavaScript')
 console.log(whats_long);
 //using assert methods to test function longestWord
 assert.deepEqual(whats_long,'JavaScript')
