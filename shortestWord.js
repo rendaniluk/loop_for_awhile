@@ -15,7 +15,7 @@ function shortestWord(sentence) {
   return shoterWord;
 }
 //Calling and storing function call in variable whats_short
-var whats_short = shortestWord('Love writing JavaScript I')
+var whats_short = shortestWord('I Love writing JavaScript')
 console.log(whats_short);
 //using assert methods to test function shortestWord
 assert.deepEqual(whats_short,'I')
